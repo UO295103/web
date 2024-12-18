@@ -1,0 +1,282 @@
+/* (Especificidad: 0,0,1) */
+body {
+  margin: 2%;
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* (Especificidad: 0,0,1) */
+main {
+  width: 98%;
+}
+
+/* (Especificidad: 0,0,1) */
+input{
+  width: 50%;
+}
+
+/* (Especificidad: 0,0,1) */
+h1 {
+  margin: 2%;
+  width: 25%;
+}
+
+/* (Especificidad: 0,0,1) */
+audio{
+  width: 90%;
+  max-width: 20rem;
+}
+
+/* (Especificidad: 0,0,2) */
+p a{
+  padding: 0%;
+}
+
+/* (Especificidad: 0,0,1) */
+a{
+  padding: 1%;
+}
+
+/* (Especificidad: 0,0,1) */
+header {
+  width: 100%;
+	display:flex;
+	flex-direction: row;
+	align-items:baseline;
+  height: 20%;
+  justify-content: space-between;
+}
+
+/* (Especificidad: 0,0,1) */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* (Especificidad: 0,0,2) */
+nav a {
+  padding: 0.8rem ;
+  text-align: right;
+}
+
+/* (Especificidad: 0,0,2) */
+header + p {
+  text-align: left;
+  width: 100%;
+}
+
+/* (Especificidad: 0,0,1) */
+ol, 
+ul {
+  margin-top: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  width: 90%;
+  word-wrap: break-word;
+}
+
+/* (Especificidad: 0,0,1) */
+label{
+  width: 20%;
+  display: block;
+}
+
+/* (Especificidad: 0,0,1) */
+li{
+  margin-top: 2rem;
+}
+
+/* (Especificidad: 0,0,2) */
+ul img {
+  padding-bottom: 2rem;
+  width: 50%;
+  height: auto;
+}
+
+/* (Especificidad: 0,0,2) */
+dl dt {
+  margin-left: 0.5rem;
+}
+
+/* (Especificidad: 0,0,2) */
+dl dd {
+  margin-left: 0.5rem;
+}
+
+/* (Especificidad: 0,0,1) */
+table {
+  width: 70%;
+  margin: auto;
+  height: auto;
+}
+
+/* (Especificidad: 0,0,2) */
+table th {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* (Especificidad: 0,0,2) */
+table tr {
+  text-align: center;
+}
+
+/* (Especificidad: 0,0,1) */
+video {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* (Especificidad: 0,0,1) */
+img {
+  width: 50%;
+  display: block;
+  height: auto;
+  margin: auto;
+}
+
+/* (Especificidad: 0,0,1) */
+button {
+  margin: 1%;
+  padding: 0.5%;
+  max-width: 15rem;
+}
+
+
+/* (Especificidad: 0,0,2) */
+article button {
+  position: absolute;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 0.5em;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* (Especificidad: 0,0,2) */
+article img {
+  width: 100%;
+  max-width: 100vh;
+  height: 50vh;
+  position: absolute;
+  object-fit: cover;
+  border-radius: 0.5em;
+  margin: auto;
+}
+
+/* (Especificidad: 0,1,1) */
+button:nth-of-type(2) {
+  top: 50%;
+  left: 2%;
+}
+
+/* (Especificidad: 0,1,1) */
+button:nth-of-type(1) {
+  top: 50%;
+  right: 2%;
+}
+
+/* (Especificidad: 0,0,4) */
+article + section + section + article {
+  width: 70%;
+  max-width: 100vh;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* (Especificidad: 0,0,1) */
+section {
+  width: 90%;
+  height: fit-content;
+}
+
+/* (Especificidad: 0,1,2) */
+section > div:first-of-type {
+  margin: auto;
+  width: 80%;
+  height: 50vh;
+}
+
+/* (Especificidad: 0,0,1) */
+canvas {
+  max-height: 30rem;
+  width: 85%;
+  border: 0.05rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/* (Especificidad: 0,0,1) */
+select {
+  display: block;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+/* (Especificidad: 0,0,1) */
+svg {
+  margin: auto auto auto 5%;
+  width: 95%;
+}
+
+@media (max-width:670px) {
+
+  /* (Especificidad: 0,0,2) */
+  header + p {
+    /*Redefinicion para eliminar migas en moviles*/
+    display: none; 
+  }
+
+ /* (Especificidad: 0,0,1) */
+ header {
+      display:flex;
+      flex-direction: column;
+      align-items: flex-start;
+      /*Redefinciciones para adaptar la navegacion a telefonos*/
+    }
+
+ /* (Especificidad: 0,0,2) */
+ header nav {
+      width: 95%; 
+      font-size: 1rem;
+      gap: 1rem;
+  }
+
+  /* (Especificidad: 0,0,2) */
+  nav a {
+    padding: 1.2%;
+    /*Redefinición de pading para reducir el tamaño
+    de la navegación en moviles*/
+  }
+
+  /* (Especificidad: 0,0,1) */
+  select {
+    width: 90%;        
+    /*Redefinición de width para que no se
+    vea muy pequeño en telefonos*/
+  }
+
+  /* (Especificidad: 0,0,1) */
+  h1 {
+    width: 100%;
+    /*Redefinición para adaptar la navegación a telefonos*/
+  }
+
+  /* (Especificidad: 0,0,1) */
+  img {
+    width: 100%;
+    /*Redefinición para adaptar la visualización a telefonos*/
+  }
+
+}

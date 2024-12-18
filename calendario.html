@@ -1,0 +1,38 @@
+<!DOCTYPE HTML> 
+<html lang="es"> 
+<head> 
+	<meta charset="UTF-8"/> 
+	<meta name ="author" content ="Iyán Solís Rodríguez" />
+	<meta name ="description" content ="Calendario de la F1" /> 
+	<meta name ="keywords" content ="F1, calendario, carreras, fecha, hora, circuito, pais, coordenadas, temporada, actual" /> 
+	<meta name ="viewport" content ="width=device-width, initial-scale=1.0" /> 
+	<title>F1 Desktop-Calendario</title> 
+	<link rel="icon" href="multimedia/imagenes/icono.ico">
+	<link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+	<link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+	<link rel="stylesheet" type="text/css"  href="estilo/agenda_grid.css"> 
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <script src="js/agenda.js" defer></script> 	
+</head> 
+
+<body> 
+<header>
+	<h1> <a href="index.html" title ="inicio">F1 Desktop</a> </h1> 
+		<nav> 
+		<a href="index.html" title ="inicio">Inicio</a>
+		<a href="piloto.html" title ="piloto">Piloto</a>
+		<a href="noticias.html" title ="noticias">Noticias</a>
+		<a href="calendario.html" title ="calendario" class="active">Calendario</a>
+		<a href="metereologia.html" title ="metereologia">Metereologia</a>
+		<a href="circuito.html" title ="circuito">Circuito</a>
+		<a href="viajes.php" title ="viajes">Viajes</a>
+		<a href="juegos.html" title ="juegos">Juegos</a>
+	</nav>
+</header>
+
+	<p ID="migas"><a href="index.html" title ="inicio" >Inicio</a> >> Calendario</p>		
+    
+    <button onclick="agenda.imprimirCarreras()">Obtener Carreras de la Temporada</button>
+
+</body> 
+</html>	

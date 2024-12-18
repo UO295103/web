@@ -1,0 +1,156 @@
+/* (Especificidad: 0,0,1) */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #aad1ec;
+    color: #333333;
+    font-size: 1.3rem;
+}
+
+/* (Especificidad: 0,0,1) */
+h1 {
+    color: #0000ff; /* Hereda el color de fondo del body */
+}
+
+/* (Especificidad: 0,0,1) */
+h3 {
+    font-family: "Franklin Gothic Medium", sans-serif;
+    font-size: 1.5rem;
+}
+
+/* (Especificidad: 0,0,1) */
+header {
+    background-color: #ffffff; /* Hereda el color del body */
+}
+
+/* (Especificidad: 0,0,2) */
+header a{
+    text-decoration: none;
+}
+
+/* (Especificidad: 0,0,2) */
+header + p {
+    font-size: 1.5rem;
+    background-color: white; /* Hereda el color del body */
+}
+
+/* (Especificidad: 0,0,1) */
+a {
+    font-family: "Trebuchet MS", sans-serif;
+    color: #0000ff; /* Hereda el color de fondo de body*/
+}
+
+/* (Especificidad: 0,0,2) */
+nav a {
+    color: #0000ff; /* Hereda el color de fondo de header*/
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* (Especificidad: 0,1,1) */
+nav .active {
+    color: #228B22;  /* Hereda el color de fondo de header*/
+}
+
+/* (Especificidad: (0,1,2) */
+nav a:hover {
+    color: #f90404; /* Hereda el color de fondo de header*/
+}
+
+/* (Especificidad: 0,0,1) */
+ol, ul {
+    font-size: 1.3rem;
+}
+
+/* (Especificidad: 0,0,2) */
+dl dt {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* (Especificidad: 0,0,2) */
+dl dd {
+    font-size: 1.2rem;
+}
+
+/* (Especificidad: 0,0,1) */
+table {
+    font-size: 1.3rem;
+    border-collapse: collapse;
+}
+
+/* (Especificidad: 0,0,2) */
+table th {
+    background-color: black;
+    color: white;
+}
+
+/* (Especificidad: 0,0,2) */
+table tr {
+    background-color: #ffffff;  /* Hereda el color de body*/
+}
+
+/* (Especificidad: 0,0,1) */
+button {
+    font-size: 1.3rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+/* (Especificidad: 0,0,2) */
+article button {
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+    font-size: 1rem;
+}
+
+/* (Especificidad: 0,0,2) */
+article img {
+    transition: all 0.5s;
+}
+
+/* (Especificidad: 0,1,1) */
+button:hover {
+    background-color: #0056b3;  /* Hereda el color de button*/
+}
+
+
+/* (Especificidad: 0,0,1)*/
+canvas {
+    border-style: solid;
+    border-color: black;
+}
+
+/* (Especificidad: 0,0,1) */
+select {
+    font-size: 1.5rem;
+}
+
+/* (Especificidad: 0,0,1) */
+svg {
+    border-color: black;
+}
+
+@media (max-width: 670px) {
+
+    /* (Especificidad: 0,0,1) */
+    body {
+        font-size: 1.2rem;  
+        /*Redefinición de pading para reducir el tamaño
+        del texto en moviles y que no se vea tan grande*/
+    }
+
+    /* (Especificidad: 0,0,1) */
+    table {
+       font-size: 0.8rem;
+        /*Redefinición del tamnaño de funete para
+        reducir el tamaño de la tabla en moviles*/
+    }
+}

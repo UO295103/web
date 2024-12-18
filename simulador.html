@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/> 
+	<meta name ="author" content ="Iyán Solís Rodríguez" />
+	<meta name ="description" content ="juegos de f1" /> 
+	<meta name ="keywords" content ="F1, juego, simulacion, carreras, pilotos, estadisticas, grafico" /> 
+	<meta name ="viewport" content ="width=device-width, initial-scale=1.0" /> 
+    <title>Simulador de carreras F1</title>
+	<link rel="icon" href="multimedia/imagenes/icono.ico">
+	<link rel="stylesheet" type="text/css" href="estilo/estilo.css" />  
+	<link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/examples/js/loaders/FontLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" title ="inicio">F1 Desktop</a> </h1> 
+            <nav> 
+            <a href="index.html" title ="inicio">Inicio</a>
+            <a href="piloto.html" title ="piloto">Piloto</a>
+            <a href="noticias.html" title ="noticias">Noticias</a>
+            <a href="calendario.html" title ="calendario">Calendario</a>
+            <a href="metereologia.html" title ="metereologia">Metereologia</a>
+            <a href="circuito.html" title ="circuito">Circuito</a>
+            <a href="viajes.php" title ="viajes">Viajes</a>
+            <a href="juegos.html" title ="juegos" class="active">Juegos</a>
+        </nav>
+    </header>
+
+    <p ID="migas"><a href="index.html" title ="inicio" >Inicio</a> >> <a href="juegos.html" title ="juegos" >Juegos</a> >> Simulador</p>
+    
+    <section>
+        <h2>Disfrute de más juegos:</h2>
+        <ul>
+            <li><a href="memoria.html" title ="juegoMemoria">Juego de memoria</a></li>
+            <li><a href="semaforo.php" title ="JuegoReaccion">Juego de reacción</a></li>
+            <li><a href="php/quiz.php" title="quiz">Juego de quiz</a></li>
+        </ul>
+    </section>
+
+    <main>
+
+        <section>
+            <h2> Como jugar:</h2>
+        
+            <p>El juego se trata de un simulador de resultados de carreras en el que debes elegir con que piloto participar y probar tu suerte.</p>
+            <ol>
+                <li>Elige a tu piloto favorito entre los disponibles y preparate para la carrera.</li>
+                <li>Pulsa el botón "Simular" para simular la carrea y comprueba si has tenido suerte y ganado.</li>
+                <li>Puedes comprobar en la parte inferior pulsando el botón "Mostrar gráfico de victorias y derrotas" las estadísticas de los pilotos en las carreras para ver quien va en cabeza.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Prepárate para la carrera:</h2>
+            <label for="selectPiloto">Selecciona un piloto:</label>
+            <select id="selectPiloto">
+                <option value="Fernando Alonso">Fernando Alonso</option>
+                <option value="Lewis Hamilton">Lewis Hamilton</option>
+                <option value="Max Verstappen">Max Verstappen</option>
+                <option value="Charles Leclerc">Charles Leclerc</option>
+                <option value="Sebastian Vettel">Sebastian Vettel</option>
+                <option value="Carlos Sainz">Carlos Sainz</option>
+            </select>
+            <button onclick="simulador.simular()">Simular carrera</button>
+            <p></p>
+            <p></p>
+        </section>
+        
+        <canvas></canvas>
+
+        <button onclick="simulador.mostrarGrafico()">Mostrar gráfico de victorias y derrotas</button>
+        <svg></svg>
+    </main>
+    
+    <script src="js/simulador.js"></script>
+</body>
+</html>

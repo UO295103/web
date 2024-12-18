@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" version="1.1">
+<line x1="50.0" y1="250" x2="50.0" y2="50" stroke="lightgrey" stroke-width="0.5"/>
+<text x="50.0" y="265" font-size="10" text-anchor="middle">0m</text>
+<line x1="132.68608503436985" y1="250" x2="132.68608503436985" y2="50" stroke="lightgrey" stroke-width="0.5"/>
+<text x="132.68608503436985" y="265" font-size="10" text-anchor="middle">500m</text>
+<line x1="215.3721700687397" y1="250" x2="215.3721700687397" y2="50" stroke="lightgrey" stroke-width="0.5"/>
+<text x="215.3721700687397" y="265" font-size="10" text-anchor="middle">1000m</text>
+<line x1="298.05825510310956" y1="250" x2="298.05825510310956" y2="50" stroke="lightgrey" stroke-width="0.5"/>
+<text x="298.05825510310956" y="265" font-size="10" text-anchor="middle">1500m</text>
+<line x1="380.7443401374794" y1="250" x2="380.7443401374794" y2="50" stroke="lightgrey" stroke-width="0.5"/>
+<text x="380.7443401374794" y="265" font-size="10" text-anchor="middle">2000m</text>
+<line x1="463.43042517184927" y1="250" x2="463.43042517184927" y2="50" stroke="lightgrey" stroke-width="0.5"/>
+<text x="463.43042517184927" y="265" font-size="10" text-anchor="middle">2500m</text>
+<line x1="546.1165102062191" y1="250" x2="546.1165102062191" y2="50" stroke="lightgrey" stroke-width="0.5"/>
+<text x="546.1165102062191" y="265" font-size="10" text-anchor="middle">3000m</text>
+<line x1="628.802595240589" y1="250" x2="628.802595240589" y2="50" stroke="lightgrey" stroke-width="0.5"/>
+<text x="628.802595240589" y="265" font-size="10" text-anchor="middle">3500m</text>
+<line x1="711.4886802749588" y1="250" x2="711.4886802749588" y2="50" stroke="lightgrey" stroke-width="0.5"/>
+<text x="711.4886802749588" y="265" font-size="10" text-anchor="middle">4000m</text>
+<line x1="794.1747653093288" y1="250" x2="794.1747653093288" y2="50" stroke="lightgrey" stroke-width="0.5"/>
+<text x="794.1747653093288" y="265" font-size="10" text-anchor="middle">4500m</text>
+<line x1="876.8608503436985" y1="250" x2="876.8608503436985" y2="50" stroke="lightgrey" stroke-width="0.5"/>
+<text x="876.8608503436985" y="265" font-size="10" text-anchor="middle">5000m</text>
+<line x1="50" y1="250.0" x2="950" y2="250.0" stroke="lightgrey" stroke-width="0.5"/>
+<text x="40" y="254.0" font-size="10" text-anchor="end">0m</text>
+<line x1="50" y1="219.23076923076923" x2="950" y2="219.23076923076923" stroke="lightgrey" stroke-width="0.5"/>
+<text x="40" y="223.23076923076923" font-size="10" text-anchor="end">2m</text>
+<line x1="50" y1="188.46153846153845" x2="950" y2="188.46153846153845" stroke="lightgrey" stroke-width="0.5"/>
+<text x="40" y="192.46153846153845" font-size="10" text-anchor="end">4m</text>
+<line x1="50" y1="157.69230769230768" x2="950" y2="157.69230769230768" stroke="lightgrey" stroke-width="0.5"/>
+<text x="40" y="161.69230769230768" font-size="10" text-anchor="end">6m</text>
+<line x1="50" y1="126.9230769230769" x2="950" y2="126.9230769230769" stroke="lightgrey" stroke-width="0.5"/>
+<text x="40" y="130.9230769230769" font-size="10" text-anchor="end">8m</text>
+<line x1="50" y1="96.15384615384613" x2="950" y2="96.15384615384613" stroke="lightgrey" stroke-width="0.5"/>
+<text x="40" y="100.15384615384613" font-size="10" text-anchor="end">10m</text>
+<line x1="50" y1="65.38461538461539" x2="950" y2="65.38461538461539" stroke="lightgrey" stroke-width="0.5"/>
+<text x="40" y="69.38461538461539" font-size="10" text-anchor="end">12m</text>
+<polyline points="117.24528551505162,188.46153846153845 157.1264380488289,111.53846153846155 187.63594970481068,50.0 202.0167136139883,50.0 235.25651979780497,126.9230769230769 286.6624588636727,142.30769230769232 294.81861429146295,142.30769230769232 489.97431218958263,188.46153846153845 500.13973948370807,157.69230769230768 533.8938531164385,173.07692307692307 591.2879184604953,173.07692307692307 636.9471746164745,188.46153846153845 656.4098253118644,188.46153846153845 669.5966021531457,173.07692307692307 696.1801784916955,173.07692307692307 741.440887717809,203.84615384615384 761.3417746638811,203.84615384615384 782.529257093088,203.84615384615384 801.7140825427626,203.84615384615384 820.7864549167904,203.84615384615384 870.0227111113561,173.07692307692307 897.3967664228347,188.46153846153845 906.5649995314456,188.46153846153845 950.0,188.46153846153845 " fill="none" stroke="blue" stroke-width="2"/>
+<text x="500.0" y="295" font-size="12" text-anchor="middle">Distancia (m)</text>
+<text x="15" y="150.0" font-size="12" text-anchor="middle" transform="rotate(-90 15,150.0)">Altitud (m)</text>
+</svg>

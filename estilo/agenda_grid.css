@@ -1,0 +1,80 @@
+/* (Especificidad: 0,0,1) */
+h2 {
+    font-size: 2rem;
+    margin-top: 2rem; 
+    margin-bottom: 6rem; 
+    text-align: center; 
+    color: #333; /*background-color heredado de body en estilo.css*/
+    display: block;
+    width: 100%;
+}
+
+/* (Especificidad: 0,0,1) */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 1rem; 
+    width: 90%; 
+    max-width: 90%; 
+    gap: 1rem; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+/* (Especificidad: 0,0,1) */
+button {
+    margin: 2rem auto;
+    display: block;
+}
+
+/* (Especificidad: 0,0,1) */
+article { 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #ffffff; /*Color heredado de body en estilo.css*/
+    padding: 1.5rem; 
+    border-radius: 10%; 
+    width: 80%;
+    margin: auto; 
+    word-wrap: break-word;
+}
+
+/* (Especificidad: 0,0,2) */
+article h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #007bff; /*background-color heredado de article*/
+    font-weight: bold;
+    text-align: center; 
+}
+
+/* (Especificidad: 0,0,1) */
+img{
+    padding-bottom: 4%;
+}
+
+/* (Especificidad: 0,0,2) */
+article p {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #555;  /*background-color heredado de article*/
+    text-align: center; 
+}
+
+/* (Especificidad: 0,0,1) */
+h3{
+    width: 100%;
+    text-align: center;
+}
+
+
+@media (max-width: 600px) {
+
+    /* (Especificidad: 0,0,1) */
+    section {
+        flex-direction: column;
+    }
+}

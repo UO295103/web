@@ -1,0 +1,89 @@
+/* (Especificidad: 0,0,2) */
+main section {
+  width: 80%;
+  margin: auto;
+  font-size: 1.5rem;
+  padding-bottom: 5%;
+  align-items: center;
+  display: block;
+}
+
+/* (Especificidad: 0,1,2) */
+main section:first-of-type {
+  border: 0.1em solid black;
+  background-color: white; /*Color heredado de body en estilo.css*/
+}
+
+/* (Especificidad: 0,0,1) */
+main{
+  width: 100%;
+  margin: auto;
+}
+
+/* (Especificidad: 0,0,3) */
+main section h2{
+  margin-left: 2%;
+  padding: 2%;
+}
+
+/* (Especificidad: 0,0,1) */
+form{
+  width: 95%;
+  text-align: center;
+  background-color: white; /*Color heredado de body en estilo.css*/
+  border: 0.1em solid black; 
+  border-radius: 1em;
+  margin: 3%;
+}
+
+/* (Especificidad: 0,0,2) */
+form select{
+  text-align: center;
+  margin: 5% auto;
+}
+
+/* (Especificidad: 0,0,2) */
+form input{
+  text-align: center;
+  margin: 2% auto;
+  width: 50%;
+  display: block;
+}
+
+/* (Especificidad: 0,0,2) */
+form button{
+  margin: 2% auto;
+  width: 41%;
+}
+
+/* (Especificidad: 0,0,2) */
+section p{
+    width: 95%;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+/* (Especificidad: 0,0,1) */
+label {
+  width: 100%;
+  display: block;
+}
+
+/* (Especificidad: 0,0,1) */
+button{
+  margin-top: 3%;
+  border-radius: 50%;
+  padding: 3%;
+  max-width: none;
+}
+
+@media (max-width: 1000px) {
+
+  /* (Especificidad: 0,0,2) */
+  main section {
+    width: 100%;
+    /*Redefinición para adaptar a telefonos eñ tamaño del
+    contenedor de preguntas*/
+  }
+  
+}

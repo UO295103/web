@@ -1,0 +1,62 @@
+<!DOCTYPE HTML> 
+<html lang="es"> 
+<head> 
+	<meta charset="UTF-8"/> 
+	<meta name ="author" content ="Iyán Solís Rodríguez" />
+	<meta name ="description" content ="Noticias acerca la F1" /> 
+	<meta name ="keywords" content ="F1,noticias, actual, crear, cargar,titular, autor" /> 
+	<meta name ="viewport" content ="width=device-width, initial-scale=1.0" /> 
+	<title>F1 Desktop-Noticias</title>  
+	<link rel="icon" href="multimedia/imagenes/icono.ico">
+	<link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+	<link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+	<link rel="stylesheet" type="text/css"  href="estilo/article_elements.css"> 
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+	integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+	crossorigin="anonymous"></script>
+	<script src="js/noticias.js"></script> 	
+</head> 
+
+<body> 
+<header>
+	<h1><a href="index.html" title ="inicio">F1 Desktop</a> </h1> 
+		<nav> 
+		<a href="index.html" title ="inicio">Inicio</a>
+		<a href="piloto.html" title ="piloto">Piloto</a>
+		<a href="noticias.html" title ="noticias" class="active">Noticias</a>
+		<a href="calendario.html" title ="calendario">Calendario</a>
+		<a href="metereologia.html" title ="metereologia">Metereologia</a>
+		<a href="circuito.html" title ="circuito">Circuito</a>
+		<a href="viajes.php" title ="viajes">Viajes</a>
+		<a href="juegos.html" title ="juegos">Juegos</a>
+	</nav>
+</header>
+	
+	<p ID="migas"><a href="index.html" title ="inicio" >Inicio</a> >> Noticias</p>	
+	
+	<section>
+		<h2>Crear noticia:</h2>
+		<label for="titulo">Titular:</label>
+		<input type="text" name="titulo" id="titulo">
+		<label for="descripcion">Noticia:</label>
+		<textarea id="descripcion" name="descripcion"></textarea>
+		<label for="autor">Autor:</label>
+		<input type="text" name="autor" id="autor">
+		<button onclick="noticias.crearNoticia()">Crear noticia</button>
+	</section>
+	
+
+	<section >
+		<h2>Cargar noticias desde archivo:</h2>
+		<label for="inputNoticias">Selecciona un archivo de texto:</label>
+		<input id="inputNoticias" type="file" onchange="noticias.readInputFile(this.files);" accept=".txt">
+	</section>
+	
+	
+	
+	<section >
+		<h2> Noticias actuales:</h2>
+	</section>
+
+</body> 
+</html>	

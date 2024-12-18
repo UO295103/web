@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.uniovi.es"
+           xmlns="http://www.uniovi.es"
+           elementFormDefault="qualified">
+	<xs:element name="circuit">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="name" />
+				<xs:element ref="long" />
+				<xs:element ref="width" />
+				<xs:element ref="date" />
+				<xs:element ref="hour" />
+				<xs:element ref="laps" />
+				<xs:element ref="locality" />
+				<xs:element ref="country" />
+				<xs:element ref="references" />
+				<xs:element ref="photos" />
+				<xs:element ref="videos" />
+				<xs:element ref="coordinates" />
+				<xs:element ref="segments" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="name" type="xs:string" />
+	<xs:element name="long">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:double">
+					<xs:attribute name="measurement" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="width">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:double">
+					<xs:attribute name="measurement" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="date" type="xs:date" />
+	<xs:element name="hour" type="xs:int" />
+	<xs:element name="laps" type="xs:int" />
+	<xs:element name="locality" type="xs:string" />
+	<xs:element name="country" type="xs:string" />
+	<xs:element name="references">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="3" maxOccurs="unbounded" ref="reference" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="reference" type="xs:string" />
+	<xs:element name="photos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="5" ref="photo" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="photo" type="xs:string" />
+	<xs:element name="videos">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="3" ref="video" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="video" type="xs:string" />
+	<xs:element name="coordinates">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="longitude" />
+				<xs:element ref="latitude" />
+				<xs:element ref="altitude" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="longitude" type="xs:double" />
+	<xs:element name="latitude" type="xs:double" />
+	<xs:element name="altitude">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:int">
+					<xs:attribute name="measurement" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="segments">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="segment" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="segment">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="distance" />
+				<xs:element ref="coordinates" />
+				<xs:element ref="sector" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="distance">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:double">
+					<xs:attribute name="measurement" type="xs:string" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="sector" type="xs:int" />
+</xs:schema>

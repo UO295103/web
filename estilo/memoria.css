@@ -1,0 +1,117 @@
+/* (Especificidad: 0,0,2) */
+section + section {
+    font-size: 1.5rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    align-content: center;
+    justify-content: center;
+    text-align: left;
+}
+
+
+/* (Especificidad: 0,0,1) */
+section{
+    width: 90%;
+    text-align: left;
+}
+
+/* (Especificidad: 0,0,1) */
+h3{
+    font-size: 1.5rem;
+}
+
+/* (Especificidad: 0,0,1) */
+article {
+    width: 20%;
+    min-height: 12rem;
+    transform: scale(1);
+    padding: 0.5rem;
+    margin: auto;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    position: relative;
+    border-color: black;
+}
+
+/* (Especificidad: 0,0,2) */
+section h2 {
+    text-align: left;
+    width: 100%;
+}
+
+/* (Especificidad: 0,0,1) */
+p, 
+li{
+    width: 95%;
+    word-wrap: break-word;
+}
+
+/* (Especificidad: 0,0,2) */
+section h3{
+    font-size: 2rem;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+/* (Especificidad: 0,0,2) */
+article img,
+article h3{
+    background-color: white; /* Hereda el color de fondo del body */
+    border-radius: 1rem;
+    backface-visibility: hidden;
+    font-size: 1.6rem;
+    width: 85%;
+    height: 85%;
+    padding: 2%;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    object-fit: contain;
+}
+
+
+/* (Especificidad: 0,1,1) */  
+article[data-state=flip],
+article[data-state="revealed"] {
+    transform: rotateY(180deg); 
+}
+
+/* (Especificidad: 0,0,2) */
+article h3 {
+    display: flex;
+    flex-direction: row;
+    /*Redefinicion para centrar el texto en la tarjeta*/
+    align-items: center; 
+    color: rgb(163, 124, 7);
+}
+
+/* (Especificidad: 0,0,2) */
+article img {
+    transform: rotateY(180deg);
+}
+
+@media (max-width: 600px) {
+    
+    /* (Especificidad: 0,0,1) */  
+    article{        
+    /*Redefinicion para ajustar el tamaño de 
+    las tarjetas a telefonos*/
+        width: 28%;
+        height: auto;  
+    /*Redefinicion para ajustar espaciado a telefonos*/
+        padding: 0.4rem;
+    }
+
+     /* (Especificidad: 0,0,2) */ 
+    article h3{
+         /*Redefinicion para reducir lo que 
+         ocupa el texto en la tarjeta para telefonos*/
+        font-size: 1.2rem;
+    }
+}

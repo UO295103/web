@@ -1,0 +1,266 @@
+/* (Especificidad: 0,0,1) */
+main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  text-align: center;
+  margin: 4% auto;
+}
+
+/* (Especificidad: 0,1,2) */
+main section:first-of-type{  
+    grid-column: 1 / span 4;
+    margin: auto;
+    width: 95%;
+    display: block;
+    text-align: left;
+}
+
+/* (Especificidad: 0,0,2) */
+section ul{
+  text-align: left;
+  width: 90%;
+}
+
+/* (Especificidad: 0,0,1) */
+div{ 
+  width: 50%;
+  height: auto;
+  background-color: #000A; /* Hereda el color de body en estilo.css*/
+  border: 0.5rem solid black;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin: 5% auto;
+}
+
+/* (Especificidad: 0,1,1) */
+div:nth-of-type(1) {
+  grid-column: 1 / span 1;
+}
+
+/* (Especificidad: 0,1,1) */
+div:nth-of-type(2) {
+  grid-column: 2 / span 1;
+}
+
+/* (Especificidad: 0,1,1) */
+div:nth-of-type(3) {
+  grid-column: 3 / span 1;
+}
+
+/* (Especificidad: 0,1,1) */
+div:nth-of-type(4) {
+  grid-column: 4 / span 1;
+}
+
+/* (Especificidad: 0,0,2) */
+main h2,
+main h4 { 
+  grid-column: 1 / -1;
+  text-align: center;
+  width: 100%;
+}
+
+/* (Especificidad: 0,0,2) */
+main h2{
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+/* (Especificidad: 0,0,1) */
+h2 {
+  padding-bottom: 1rem;
+}
+
+/* (Especificidad: 0,1,1) */
+button:first-of-type {
+  grid-column: 2 / span 1;
+  margin: auto ;
+  width: 80%;
+}
+
+/* (Especificidad: 0,1,1) */
+button:nth-of-type(2) {
+  grid-column: 3 / span 1;
+  margin: 7% auto;
+  width: 80%;
+}
+
+/* (Especificidad: 0,0,2) */
+form button {
+  display: block;
+  margin: auto;
+  position: relative;
+  width: 40%;
+  height: auto;
+  font-size: 1.3rem;
+  border-radius: 0%;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+@keyframes encenderRojo {
+  0% {
+    background-color: black; /* Hereda el color de button*/
+  }
+  100% {
+    background-color: red; /* Hereda el color de button*/
+  }
+}
+
+/*Redefinicion de colores de fondo  es kayframes para hacer
+ las luces semaforo que cambien durante al juego*/
+
+@keyframes apagarRojo {
+  0% {
+    background-color: red; /* Hereda el color de button*/
+  }
+  100% {
+    background-color: black; /* Hereda el color de button*/
+  }
+}
+
+/* (Especificidad: 0,1,2) */
+main.load div {
+  animation: encenderRojo 0.5s forwards;
+  animation-fill-mode: forwards;
+  /*Redefinicion de animation-fill-mode para el juego*/
+}
+
+/* (Especificidad: 0,2,2) */
+main.load div:nth-of-type(1) {
+  animation-delay: 0s;
+  grid-column: 1 / span 1;
+}
+
+
+/* (Especificidad: 0,2,2) */
+main.load div:nth-of-type(2) {
+  animation-delay: 0.5s;
+  grid-column: 2 / span 1;
+}
+
+
+/* (Especificidad: 0,2,2) */
+main.load div:nth-of-type(3) {
+  animation-delay: 1s;
+  grid-column: 3 / span 1;
+}
+
+
+/* (Especificidad: 0,2,2) */
+main.load div:nth-of-type(4) {
+  animation-delay: 1.5s;
+  grid-column: 4 / span 1;
+}
+
+
+/* (Especificidad: 0,2,2) */
+main.unload.load div {
+  animation: apagarRojo;
+  animation-delay: 0s;
+}
+
+/* (Especificidad: 0,0,1) */
+article {
+  grid-column: 1 / span 5;
+  text-align: center;
+  align-items: center;
+  font-size: 1.3rem;
+  width: 70%;
+  color: white;
+  background-color: grey; /*Color heredado de body en estilo.css*/
+  box-sizing: border-box;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  border: 0.2em solid black;
+}
+
+/* (Especificidad: 0,0,2) */
+article h3, article ol, article li {
+  text-align: center;
+  width: 100%;
+}
+
+/* (Especificidad: 0,0,2) */
+article ol {
+  margin-left: 3%;
+  font-size: 1.5rem;
+}
+
+/* (Especificidad: 0,0,2) */
+li marker {
+  margin-left: 2%;
+}
+
+
+input, /* (Especificidad: 0,0,1) */
+form input, form select, form textarea {/* (Especificidad: 0,0,2) */
+  width: 90%;
+  margin: 3%;
+}
+
+/* (Especificidad: 0,0,1) */
+label {
+  margin: 0.6% 2%;
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  width: 100%;
+}
+
+
+@media (max-width: 670px) {
+
+ /* (Especificidad: 0,0,2) */
+  ol li {
+    font-size: 1.1rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  /* (Especificidad: 0,0,2) */
+  section article {
+    display: grid;
+    gap: 1rem;
+  }
+
+  /* (Especificidad: 0,0,1) */
+  article {
+    width: 95%; /*Redefinicion del ancho para adaptar a telefonos*/
+  }
+
+  /* (Especificidad: 0,0,1) */
+  button {
+    font-size: 0.8rem;
+  }
+
+  /* (Especificidad: 0,0,2) */
+  article h3, article ol, article li {
+    text-align: left;
+    /*Redefinicion del alineamiento dle texto para 
+    una mejor visivilidad en telefonos*/
+  }
+
+  /* (Especificidad: 0,0,2) */
+  form input,
+  form select,
+  form textarea,
+  form button {
+    width: 75%; /*Redefinicion del ancho para adaptar a telefonos*/
+    padding: 0.8rem; /*Redefinicion del espaciado para adaptar a telefonos*/
+  }
+
+  /* (Especificidad: 0,0,2) */
+  main h2{
+    /*Redefinición de margenes para adaptar a telefonos*/
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuit SYSTEM "circuito.dtd">
+
+<circuit>
+    <name>Yas Marina Circuit</name>
+    <long measurement="km">5.28</long>
+    <width measurement="m">14</width>
+    <date>08/12/2024</date>
+    <hour>14:00</hour>
+    <laps>55</laps>
+    <locality>Abu Dabi</locality>
+    <country>Emiratos Árabes Unidos</country>
+    
+    <references> 
+        <reference>https://yasmarinacircuit.com/</reference>
+        <reference>https://www.formula1.com/en/information/abu-dhabi-yas-marina-circuit-yas-island.4YtOtpaWvaxWvDBTItP7s6</reference>
+        <reference>https://es.wikipedia.org/wiki/Circuito_Yas_Marina</reference>
+    </references>
+    
+    <photos>
+        <photo>YasMarinaVistaAerea.png</photo>
+        <photo>YasMarinaSectors.png</photo>
+        <photo>YasMarinaRaceDay.png</photo>
+    </photos>
+    
+    <videos>
+        <video>YasMarinaPresentation.mp4</video>
+    </videos>
+    
+    <coordinates>
+        <latitude>24.4698875</latitude>
+        <longitude>54.6052031</longitude>
+        <altitude measurement="m">4</altitude>
+    </coordinates>
+    
+    <segments> 
+        <segment>
+            <distance measurement="m">406.63</distance>
+            <coordinates>
+                <latitude>24.470402</latitude>
+                <longitude>54.608059</longitude>
+                <altitude measurement="m">4</altitude>
+            </coordinates>
+            <sector>1</sector>
+        </segment>
+        <segment>
+            <distance measurement="m">241.16</distance>
+            <coordinates>
+                <latitude>24.472551</latitude>
+                <longitude>54.607516</longitude>
+                <altitude measurement="m">9</altitude>
+            </coordinates>
+            <sector>1</sector>
+        </segment>
+        <segment>
+            <distance measurement="m">184.49</distance>
+            <coordinates>
+                <latitude>24.473301</latitude>
+                <longitude>54.605879</longitude>
+                <altitude measurement="m">13</altitude>
+            </coordinates>
+            <sector>1</sector>
+        </segment>
+        <segment>
+            <distance measurement="m">86.96</distance>
+            <coordinates>
+                <latitude>24.473926</latitude>
+                <longitude>54.605717</longitude>
+                <altitude measurement="m">13</altitude>
+            </coordinates>
+            <sector>1</sector>
+        </segment>
+        <segment>
+            <distance measurement="m">201</distance>
+            <coordinates>
+                <latitude>24.475773</latitude>
+                <longitude>54.606064</longitude>
+                <altitude measurement="m">8</altitude>
+            </coordinates>
+            <sector>1</sector>
+        </segment>
+        <segment>
+            <distance measurement="m">310.85</distance>
+            <coordinates>
+                <latitude>24.478552</latitude>
+                <longitude>54.605632</longitude>
+                <altitude measurement="m">7</altitude>
+            </coordinates>
+            <sector>2</sector>
+        </segment>
+        <segment>
+            <distance measurement="m">49.32</distance>
+            <coordinates>
+                <latitude>24.478615</latitude>
+                <longitude>54.605141</longitude>
+                <altitude measurement="m">7</altitude>
+            </coordinates>
+            <sector>2</sector>
+        </segment>
+        <segment>
+            <distance measurement="m">1180.10</distance>
+            <coordinates>
+                <latitude>24.468480</latitude>
+                <longitude>54.601563</longitude>
+                <altitude measurement="m">4</altitude>
+            </coordinates>
+            <sector>2</sector>
+        </segment>
+        <segment>
+            <distance measurement="m">61.47</distance>
+            <coordinates>
+                <latitude>24.468453</latitude>
+                <longitude>54.602163</longitude>
+                <altitude measurement="m">6</altitude>
+            </coordinates>
+            <sector>2</sector>
+        </segment>
+        <segment>
+            <distance measurement="m">204.11</distance>
+            <coordinates>
+                <latitude>24.466748</latitude>
+                <longitude>54.602910</longitude>
+                <altitude measurement="m">5</altitude>
+            </coordinates>
+            <sector>2</sector>
+        </segment>
+        <segment>
+            <distance measurement="m">347.06</distance>
+            <coordinates>
+                <latitude>24.464756802078266</latitude>
+                <longitude>54.60552452999011</longitude>
+                <altitude measurement="m">5</altitude>
+            </coordinates>
+            <sector>2</sector>
+        </segment>
+        <segment>
+            <distance measurement="m">276.10</distance>
+            <coordinates>
+                <latitude>24.463506820105835</latitude>
+                <longitude>54.60787377775422</longitude>
+                <altitude measurement="m">4</altitude>
+            </coordinates>
+            <sector>2</sector>
+        </segment>
+        <segment>
+            <distance measurement="m">117.69</distance>
+            <coordinates>
+                <latitude>24.463209079373005</latitude>
+                <longitude>54.60910995769</longitude>
+                <altitude measurement="m">4</altitude>
+            </coordinates>
+            <sector>3</sector>
+        </segment>
+        <segment>
+            <distance measurement="m">79.74</distance>
+            <coordinates>
+                <latitude>24.46369530756678</latitude>
+                <longitude>54.60955349249952</longitude>
+                <altitude measurement="m">5</altitude>
+            </coordinates>
+            <sector>3</sector>
+        </segment>
+        <segment>
+            <distance measurement="m">160.75</distance>
+            <coordinates>
+                <latitude>24.464440853817795</latitude>
+                <longitude>54.609249169345546</longitude>
+                <altitude measurement="m">5</altitude>
+            </coordinates>
+            <sector>3</sector>
+        </segment>
+        <segment>
+            <distance measurement="m">273.69</distance>
+            <coordinates>
+                <latitude>24.464823939117604</latitude>
+                <longitude>54.60657177307676</longitude>
+                <altitude measurement="m">3</altitude>
+            </coordinates>
+            <sector>3</sector>
+        </segment>
+        <segment>
+            <distance measurement="m">120.34</distance>
+            <coordinates>
+                <latitude>24.465481075031903</latitude>
+                <longitude>54.605545491789904</longitude>
+                <altitude measurement="m">3</altitude>
+            </coordinates>
+            <sector>3</sector>
+        </segment>
+        <segment>
+            <distance measurement="m">128.12</distance>
+            <coordinates>
+                <latitude>24.466559595602817</latitude>
+                <longitude>54.605318868152295</longitude>
+                <altitude measurement="m">3</altitude>
+            </coordinates>
+            <sector>3</sector>
+        </segment>
+        <segment>
+            <distance measurement="m">116.01</distance>
+            <coordinates>
+                <latitude>24.466815963881416</latitude>
+                <longitude>54.60642932391627</longitude>
+                <altitude measurement="m">3</altitude>
+            </coordinates>
+            <sector>3</sector>
+        </segment>
+        <segment>
+            <distance measurement="m">115.33</distance>
+            <coordinates>
+                <latitude>24.46786795240736</latitude>
+                <longitude>54.6064034240762</longitude>
+                <altitude measurement="m">3</altitude>
+            </coordinates>
+            <sector>3</sector>
+        </segment>
+        <segment>
+            <distance measurement="m">297.73</distance>
+            <coordinates>
+                <latitude>24.46776186994069</latitude>
+                <longitude>54.603473504305526</longitude>
+                <altitude measurement="m">5</altitude>
+            </coordinates>
+            <sector>3</sector>
+        </segment>
+        <segment>
+            <distance measurement="m">165.53</distance>
+            <coordinates>
+                <latitude>24.469085854149476</latitude>
+                <longitude>54.60262261244315</longitude>
+                <altitude measurement="m">4</altitude>
+            </coordinates>
+            <sector>3</sector>
+        </segment>
+        <segment>
+            <distance measurement="m">55.44</distance>
+            <coordinates>
+                <latitude>24.4695422949973</latitude>
+                <longitude>54.60259004865286</longitude>
+                <altitude measurement="m">4</altitude>
+            </coordinates>
+            <sector>3</sector>
+        </segment>
+        <segment>
+            <distance measurement="m">262.65</distance>
+            <coordinates>
+                <latitude>24.469945384260093</latitude>
+                <longitude>54.60519515191165</longitude>
+                <altitude measurement="m">4</altitude>
+            </coordinates>
+            <sector>3</sector>
+        </segment>
+    </segments>
+</circuit>

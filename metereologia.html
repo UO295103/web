@@ -1,0 +1,63 @@
+<!DOCTYPE HTML> 
+<html lang="es"> 
+<head> 
+	<meta charset="UTF-8"/> 
+	<meta name ="author" content ="Iyán Solís Rodríguez" />
+	<meta name ="description" content ="Metereologia que afecta a la F1" /> 
+	<meta name ="keywords" content ="F1, metereologia, pais, informacion, capital, circuito,
+	coordenadas, poblacion, gobierno, religion, prevision, clima, temperatura, humedad, lluvias" /> 
+	<meta name ="viewport" content ="width=device-width, initial-scale=1.0" /> 
+	<title>F1 Desktop-Metereologia</title> 
+	<link rel="icon" href="multimedia/imagenes/icono.ico">
+	<link rel="stylesheet" type="text/css" href="estilo/estilo.css" /> 
+	<link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+	<link rel="stylesheet" type="text/css"  href="estilo/article_elements.css"> 
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+	integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+	crossorigin="anonymous"></script>
+	<script src="js/pais.js"></script>
+</head> 
+
+<body> 
+
+	<header>
+	<h1> <a href="index.html" title ="inicio">F1 Desktop</a> </h1> 
+		<nav> 
+		<a href="index.html" title ="inicio">Inicio</a>
+		<a href="piloto.html" title ="piloto">Piloto</a>
+		<a href="noticias.html" title ="noticias">Noticias</a>
+		<a href="calendario.html" title ="calendario">Calendario</a>
+		<a href="metereologia.html" title ="metereologia" class="active">Metereologia</a>
+		<a href="circuito.html" title ="circuito">Circuito</a>
+		<a href="viajes.php" title ="viajes">Viajes</a>
+		<a href="juegos.html" title ="juegos">Juegos</a>
+	</nav>
+</header>
+<p ID="migas"><a href="index.html" title="inicio">Inicio</a> >> Meteorología</p>
+
+<section>
+	<script>
+		pais.showTitle();
+		pais.showIntroduccion();
+	</script>
+</section>
+
+<section>
+	<h2>Localización del circuito en el país</h2>
+	<p>El circuito se encuentra concretamente en las siguientes coordenadas:</p>
+
+	<script>
+		pais.writeCoords();
+	</script>
+</section>
+
+<section>
+	<script>
+		pais.showExtraData();
+	</script>
+</section>
+
+<script> pais.consultarMeteorologia();</script>
+
+</body> 
+</html>	

@@ -1,0 +1,32 @@
+﻿<!ELEMENT circuit (name, long, width, date, hour, laps, locality, country, references, photos, videos, coordinates, segments)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT long (#PCDATA)>
+<!ATTLIST long measurement CDATA #REQUIRED>
+<!ELEMENT width (#PCDATA)>
+<!ATTLIST width measurement CDATA #REQUIRED>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT hour (#PCDATA)>
+<!ELEMENT laps (#PCDATA)>
+<!ELEMENT locality (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+
+<!ELEMENT references (reference+)>
+<!ELEMENT reference (#PCDATA)>
+
+<!ELEMENT photos (photo+)>
+<!ELEMENT photo (#PCDATA)>
+
+<!ELEMENT videos (video+)>
+<!ELEMENT video (#PCDATA)>
+
+<!ELEMENT coordinates (latitude,longitude,altitude)>
+<!ELEMENT longitude (#PCDATA)>
+<!ELEMENT latitude (#PCDATA)>
+<!ELEMENT altitude (#PCDATA)>
+<!ATTLIST altitude measurement CDATA #REQUIRED>
+
+<!ELEMENT segments (segment+)>
+<!ELEMENT segment (distance, coordinates, sector)>
+<!ELEMENT distance (#PCDATA)>
+<!ATTLIST distance measurement CDATA #REQUIRED>
+<!ELEMENT sector (#PCDATA)>

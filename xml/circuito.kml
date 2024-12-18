@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="1">
+        <Document id="2">
+            <Style id="53">
+                <LineStyle id="54">
+                    <color>ff0000ff</color>
+                    <colorMode>normal</colorMode>
+                    <width>4</width>
+                </LineStyle>
+            </Style>
+            <name>Yas Marina Circuit</name>
+            <Placemark id="4">
+                <name>Segment: 406.63 m</name>
+                <Point id="3">
+                    <coordinates>54.608059,24.470402,4.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="6">
+                <name>Segment: 241.16 m</name>
+                <Point id="5">
+                    <coordinates>54.607516,24.472551,9.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="8">
+                <name>Segment: 184.49 m</name>
+                <Point id="7">
+                    <coordinates>54.605879,24.473301,13.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="10">
+                <name>Segment: 86.96 m</name>
+                <Point id="9">
+                    <coordinates>54.605717,24.473926,13.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="12">
+                <name>Segment: 201 m</name>
+                <Point id="11">
+                    <coordinates>54.606064,24.475773,8.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="14">
+                <name>Segment: 310.85 m</name>
+                <Point id="13">
+                    <coordinates>54.605632,24.478552,7.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="16">
+                <name>Segment: 49.32 m</name>
+                <Point id="15">
+                    <coordinates>54.605141,24.478615,7.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="18">
+                <name>Segment: 1180.10 m</name>
+                <Point id="17">
+                    <coordinates>54.601563,24.46848,4.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="20">
+                <name>Segment: 61.47 m</name>
+                <Point id="19">
+                    <coordinates>54.602163,24.468453,6.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="22">
+                <name>Segment: 204.11 m</name>
+                <Point id="21">
+                    <coordinates>54.60291,24.466748,5.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="24">
+                <name>Segment: 347.06 m</name>
+                <Point id="23">
+                    <coordinates>54.60552452999011,24.464756802078266,5.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="26">
+                <name>Segment: 276.10 m</name>
+                <Point id="25">
+                    <coordinates>54.60787377775422,24.463506820105835,4.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="28">
+                <name>Segment: 117.69 m</name>
+                <Point id="27">
+                    <coordinates>54.60910995769,24.463209079373005,4.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="30">
+                <name>Segment: 79.74 m</name>
+                <Point id="29">
+                    <coordinates>54.60955349249952,24.46369530756678,5.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="32">
+                <name>Segment: 160.75 m</name>
+                <Point id="31">
+                    <coordinates>54.609249169345546,24.464440853817795,5.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="34">
+                <name>Segment: 273.69 m</name>
+                <Point id="33">
+                    <coordinates>54.60657177307676,24.464823939117604,3.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="36">
+                <name>Segment: 120.34 m</name>
+                <Point id="35">
+                    <coordinates>54.605545491789904,24.465481075031903,3.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="38">
+                <name>Segment: 128.12 m</name>
+                <Point id="37">
+                    <coordinates>54.605318868152295,24.466559595602817,3.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="40">
+                <name>Segment: 116.01 m</name>
+                <Point id="39">
+                    <coordinates>54.60642932391627,24.466815963881416,3.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="42">
+                <name>Segment: 115.33 m</name>
+                <Point id="41">
+                    <coordinates>54.6064034240762,24.46786795240736,3.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="44">
+                <name>Segment: 297.73 m</name>
+                <Point id="43">
+                    <coordinates>54.603473504305526,24.46776186994069,5.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="46">
+                <name>Segment: 165.53 m</name>
+                <Point id="45">
+                    <coordinates>54.60262261244315,24.469085854149476,4.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="48">
+                <name>Segment: 55.44 m</name>
+                <Point id="47">
+                    <coordinates>54.60259004865286,24.4695422949973,4.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="50">
+                <name>Segment: 262.65 m</name>
+                <Point id="49">
+                    <coordinates>54.60519515191165,24.469945384260093,4.0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="52">
+                <name>Circuito</name>
+                <styleUrl>#53</styleUrl>
+                <LineString id="51">
+                    <coordinates>54.608059,24.470402,4.0 54.607516,24.472551,9.0 54.605879,24.473301,13.0 54.605717,24.473926,13.0 54.606064,24.475773,8.0 54.605632,24.478552,7.0 54.605141,24.478615,7.0 54.601563,24.46848,4.0 54.602163,24.468453,6.0 54.60291,24.466748,5.0 54.60552452999011,24.464756802078266,5.0 54.60787377775422,24.463506820105835,4.0 54.60910995769,24.463209079373005,4.0 54.60955349249952,24.46369530756678,5.0 54.609249169345546,24.464440853817795,5.0 54.60657177307676,24.464823939117604,3.0 54.605545491789904,24.465481075031903,3.0 54.605318868152295,24.466559595602817,3.0 54.60642932391627,24.466815963881416,3.0 54.6064034240762,24.46786795240736,3.0 54.603473504305526,24.46776186994069,5.0 54.60262261244315,24.469085854149476,4.0 54.60259004865286,24.4695422949973,4.0 54.60519515191165,24.469945384260093,4.0 54.608059,24.470402,4.0</coordinates>
+                </LineString>
+            </Placemark>
+        </Document>
+    </Document>
+</kml>

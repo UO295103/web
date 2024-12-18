@@ -1,0 +1,102 @@
+/* (Especificidad: 0,0,1) */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 100%;
+    margin: auto;
+}
+
+
+/* (Especificidad: 0,0,2) */
+section > label {
+    font-weight: bold;
+}
+
+/* (Especificidad: 0,0,2) */
+section > input,
+section > textarea {
+    width: 95%;
+    padding: 0.5em;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+}
+
+/* (Especificidad: 0,0,2) */
+section > textarea {
+    resize: vertical;
+    height: 8em;
+}
+
+/* (Especificidad: 0,0,2) */
+section > h2 {
+    text-align: left;
+    width: 95%;
+}
+
+/* (Especificidad: 0,0,1) */
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;        
+    background-color: rgb(10, 117, 167);
+    margin: auto;         
+    width: 15%;
+    padding: 4%;
+    max-width: 60%;
+    color: rgb(255, 255, 255);
+}
+
+/* (Especificidad: 0,0,2) */
+article img {
+    padding: 0%;
+    display: block;
+    width:50%;
+    height:auto;
+    position: relative;
+    transition: none;
+    object-fit: cover;
+    margin: auto; 
+}
+
+/* (Especificidad: 0,0,2) */
+article h3{
+    font-size: 1.5rem;
+}
+
+/* (Especificidad: 0,0,2) */
+article p {
+    padding-top: 2rem;
+    font-size: 1.3rem;
+    margin: auto;
+    width: 90%;
+    white-space: pre-wrap; 
+    word-wrap: break-word;
+}
+
+
+@media (max-width: 480px) {
+    
+    /* (Especificidad: 0,0,1) */
+    article {
+    /*Redefinicion del ancho para adaptar el tamaño a telefonos*/
+        width: 100%;
+    }
+
+     /* (Especificidad: 0,0,2) */
+    article h3{
+    /*Redefinicion de la fuente para adaptar el tamaño a telefonos*/
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    /* (Especificidad: 0,0,1) */
+    article {
+    /*Redefinicion del ancho para adaptar el tamaño de los articulos del tiempo
+    y noticias en dispositivos grandes*/
+        width: 40%;
+    }
+}

@@ -1,0 +1,61 @@
+idPregunta,texto,correcta
+1,"Juan Manuel Fangio",1
+1,"Michael Schumacher",0
+1,"Lewis Hamilton",0
+1,"Sebastian Vettel",0
+2,"Daniel Ricciardo",0
+2,"Kimi Räikkönen",1
+2,"Fernando Alonso",0
+2,"Valtteri Bottas",0
+3,"Lewis Hamilton",1
+3,"Fernando Alonso",0
+3,"Kimi Räikkönen",0
+3,"Sebastian Vettel",0
+4,"Circuito de Silverstone",0
+4,"Circuito de Suzuka",0
+4,"Circuito de Montecarlo",1
+4,"Circuito de Interlagos",0
+5,"Circuito de Spa-Francorchamps",1
+5,"Circuito de Le Mans",0
+5,"Circuito de Monza",0
+5,"Circuito de Baku",0
+6,"Circuito de Hockenheim",0
+6,"Circuito de Suzuka",1
+6,"Circuito de Circuit de Barcelona-Catalunya",0
+6,"Circuito de Silverstone",0
+7,Mercedes,0
+7,Ferrari,1
+7,"Red Bull Racing",0
+7,McLaren,0
+8,Williams,0
+8,"Red Bull Racing",1
+8,"Alfa Romeo Racing",0
+8,"Aston Martin",0
+9,McLaren,0
+9,Ferrari,1
+9,Mercedes,0
+9,Williams,0
+10,1950,1
+10,1947,0
+10,1965,0
+10,1955,0
+11,"Michael Schumacher",1
+11,"Lewis Hamilton",0
+11,"Juan Manuel Fangio",0
+11,"Nelson Piquet",0
+12,"Gran Premio de Italia, 1993",0
+12,"Gran Premio de San Marino, 1994",1
+12,"Gran Premio de Mónaco, 1992",0
+12,"Gran Premio de Japón, 1991",0
+13,"El motor",0
+13,"El alerón",1
+13,"El escape",0
+13,"Las llantas",0
+14,ERS,0
+14,KERS,1
+14,MGU-K,0
+14,F1-Hybrid,0
+15,"Acero inoxidable",1
+15,Aluminio,0
+15,"Fibra de carbono",1
+15,Titanio,0

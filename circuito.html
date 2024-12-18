@@ -1,0 +1,52 @@
+<!DOCTYPE HTML> 
+<html lang="es"> 
+<head> 
+	<meta charset="UTF-8"/> 
+	<meta name ="author" content ="Iyán Solís Rodríguez" />
+	<meta name ="description" content ="Circuito de la F1" /> 
+	<meta name ="keywords" content ="F1, circuito, XML, KML, SVG, informacion, mapa, altimetria, cargar, datos" /> 
+	<meta name ="viewport" content ="width=device-width, initial-scale=1.0" /> 
+	<title>F1 Desktop-Circuito</title>  
+	<link rel="icon" href="multimedia/imagenes/icono.ico">
+	<link rel="stylesheet" type="text/css" href="estilo/estilo.css" /> 
+	<link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGqr2g-EfG44yE4RlqzXoyGDzIG3T4ySk"></script>
+	<script src="js/circuito.js"></script> 
+</head> 
+
+<body> 
+<header>
+	<h1><a href="index.html" title ="inicio">F1 Desktop</a> </h1>  
+	<nav> 
+		<a href="index.html" title ="inicio">Inicio</a>
+		<a href="piloto.html" title ="piloto">Piloto</a>
+		<a href="noticias.html" title ="noticias">Noticias</a>
+		<a href="calendario.html" title ="calendario">Calendario</a>
+		<a href="metereologia.html" title ="metereologia">Metereologia</a>
+		<a href="circuito.html" title ="circuito" class="active">Circuito</a>
+		<a href="viajes.php" title ="viajes">Viajes</a>
+		<a href="juegos.html" title ="juegos">Juegos</a>
+	</nav>
+</header>
+	<p ID="migas"><a href="index.html" title ="inicio" >Inicio</a> >> Circuito</p>	
+	
+	<section>
+		<h2>Cargar información desde XML:</h2>
+		<label for="inputXML">Selecciona un archivo XML:</label>
+		<input id="inputXML" type="file" onchange="circuit.leerXML(this.files);" accept=".xml">
+	</section>
+	<section>
+		<h2>Crear mapa dinámico desde KML:</h2>
+		<label for="inputKML">Selecciona un archivo KML:</label>
+		<input id="inputKML" type="file" onchange="circuit.leerKML(this.files);" accept=".kml">
+	</section>
+	<section>
+		<h2>Cargar altimetría desde SVG:</h2>
+		<label for="inputSVG">Selecciona un archivo SVG:</label>
+		<input id="inputSVG" type="file" onchange="circuit.leerSVG(this.files);" accept=".svg">
+	</section>
+	
+
+</body> 
+</html>	
